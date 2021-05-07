@@ -5,6 +5,7 @@ import {
   FaDribbbleSquare,
   FaBehanceSquare,
   FaTwitterSquare,
+  FaTheRedYeti,
 } from "react-icons/fa"
 
 const data = [
@@ -34,6 +35,10 @@ const data = [
     url: "https://www.twitter.com",
   },
 ]
+
+// iterating over the array for each and every item i'm returning the list item with the key
+// there's an href which return the html element and there's a class for styling
+// within the link there is an icon
 const links = data.map(link => {
   return (
     <li key={link.id}>
@@ -44,8 +49,10 @@ const links = data.map(link => {
   )
 })
 
+// if you want to apply specific stlying to a place you're displaying these links, we pass in the styleClass,
 export default ({ styleClass }) => {
   return (
+    // if the styleClass is there, we use whatever value we pass and if it's not there, we pass in an empty value
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>
   )
 }
