@@ -40,7 +40,7 @@ const Jobs = () => {
   // when we click on the buttons with the company titles, we just want to grab one item from that array (nodes: jobs)
   // the item is going to depend on the index as we have sorted in our query
   // you'll always get a different result depending on the index of the job because this is the hard-coded version
-  // const { company, position, date, description } = jobs[0]
+  const { company, position, date, description } = jobs[0]
   // dynamically:
   // in order to set it dynamically, you would want to use useState hook
   // useState hook always returns an array
