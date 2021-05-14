@@ -73,6 +73,9 @@ const Jobs = () => {
             // ternary: if index is equal to whatever the value is then add also an 'active-btn' class
             <button
               key={job.strapiId}
+              // at the moment the active button will always be the 0 index
+              // So we can change that by using onClick, whatever index you have for that item, once you click on a new button, the arrow functions runs and it changes the value (jobs[value])
+              onClick={() => setValue(index)}
               className={`job-btn ${index === value && "active-btn"}`}
             >
               {job.company}
