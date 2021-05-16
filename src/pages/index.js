@@ -16,4 +16,28 @@ export default () => {
     </Layout>
   )
 }
-// ...GatsbyImageSharpFluid
+
+const query = graphql`
+  {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
+      nodes {
+        github
+        id
+        description
+        title
+        url
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        stack {
+          id
+          title
+        }
+      }
+    }
+  }
+`
