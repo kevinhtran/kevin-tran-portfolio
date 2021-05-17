@@ -23,7 +23,7 @@ export default ({ data }) => {
       {/* passing 3 props*/}
       {/* title - we want our title to show featured projects */}
       {/* showLink - displays the link if it's there */}
-      <Projects project={projects} title="featured projects" showLink />
+      <Projects projects={projects} title="featured projects" showLink />
     </Layout>
   )
 }
