@@ -10,7 +10,17 @@ const ProjectsPage = ({
     allStrapiProjects: { nodes: projects },
   },
 }) => {
-  return <h2>projects page</h2>
+  return (
+    // we're using our layout component which contains all the necessary stlying for us already
+    // within the Layout, we're going to make a section with the Projects component with projects prop with all projects beecause our query is now different
+    // it's more useful to setup projects as a seperate component that is only looking for some kind of prop. so that we don't have to look for some sort of query because we can't control it entirely.
+    // instead we can pass in whatever projects we want and the project component is only going to render that data.
+    <Layout>
+      <section className="projects-page">
+        <Projects projects={projects} title="all projects" />
+      </section>
+    </Layout>
+  )
 }
 
 export const query = graphql`
