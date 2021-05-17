@@ -2,8 +2,14 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
+import { FaTheaterMasks } from "react-icons/fa"
 
-const ProjectsPage = () => {
+// we destructure, take our allStrapiProjects object and within that, we look for nodes and give it an alias of 'projects'
+const ProjectsPage = ({
+  data: {
+    allStrapiProjects: { nodes: projects },
+  },
+}) => {
   return <h2>projects page</h2>
 }
 
