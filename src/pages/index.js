@@ -31,7 +31,7 @@ export default ({ data }) => {
 // we place this projects content query here because we just pass this query into a the projects component as a prop
 // later in the projects page, we run the query in our projects component but without the featured filter
 // instead of setting the query in the project, i'll set the query in the pages - index.js where i'll display those projects
-export const query = graphql`
+export const query = graphql
   {
     allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
@@ -50,6 +50,24 @@ export const query = graphql`
         stack {
           id
           title
+        }
+      }
+    }
+    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
+      nodes {
+        slug
+        content
+        description
+        date(formatString: "MMMM Do, YYYY")
+        id
+        title
+        category
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
     }
