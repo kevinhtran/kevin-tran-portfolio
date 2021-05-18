@@ -9,11 +9,10 @@ export const Blogs = ({ blogs, title, showLink }) => {
     <section className="section">
       {/* this will be the title with whatever title we're getting from the index.js (homepage) */}
       <Title title={title} />
-      {/* we then have the div have all the blogs inside of import PropTypes from
-      'prop-types' also within this blog we iterate over our blogs since we can
+      {/* we then have the div that has all the blogs. we iterate over our blogs since we can
       access each and every item within our callback function, we pass in blog
-      as a parameter as far as our return, we will return our blog component
-      where we use our key with the blog.id we then have the object spread
+      as a parameter. as far as our return, we will return our blog component
+      where we use our key with the blog.id. we then have the object spread
       operator which spreads out all of the properties we have inside our blog */}
       <div className="section-cetner blogs-center">
         {blogs.map(blog => {
