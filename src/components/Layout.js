@@ -14,11 +14,14 @@ const Layout = ({ children }) => {
   const toggleSidebar = () => {
     setIsOpen(!isOpen)
   }
+  // now we want to pass isOpen to the sidebar and also toggleSidebar function.
   return (
     <>
-      <Navbar />
+      {/* for the Navbar, we only want to pass the function which is toggleSidebar as the prop and {toggleSidebar} as the function reference */}
+      <Navbar toggleSidebar={toggleSidebar} />
       {/* doesn't really matter where you place the sidebar because it is using position-fixed */}
-      <Sidebar />
+      {/* we need both things: isOpen which is responsible for our class and toggleSidebar={toggleSidebar} since we have the closed button as well */}
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       {/* contents of the page */}
       {children}
       <Footer />
