@@ -14,8 +14,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <FaTimes />
       </button>
       <div className="side-container">
-        <Links styleClass="sidebar-links" />
-        <SocialLinks styleClass="sidebar-icons" />
+        {/* sidebar animation */}
+        {/* going with template string and then we setup our expression
+        go with isOpen and if the value is false then we have our empty value and if true, then use sidebar-links */}
+        <Links styleClass={`${isOpen ? "sidebar-links" : ""}`} />
+        {/* same idea with the ternary here but with sidebar-icons */}
+        <SocialLinks styleClass={`${isOpen ? "sidebar-icons" : ""}`} />
       </div>
     </aside>
   )
