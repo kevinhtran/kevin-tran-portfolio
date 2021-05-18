@@ -14,7 +14,7 @@ export const Blogs = ({ blogs, title, showLink }) => {
       as a parameter. as far as our return, we will return our blog component
       where we use our key with the blog.id. we then have the object spread
       operator which spreads out all of the properties we have inside our blog */}
-      <div className="section-cetner blogs-center">
+      <div className="section-center blogs-center">
         {blogs.map(blog => {
           return <Blog key={blog.id} {...blog} />
         })}

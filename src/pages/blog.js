@@ -2,13 +2,21 @@ import React from "react"
 import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Blogs from "../components/Blogs"
+import { FaTheaterMasks } from "react-icons/fa"
 
 const Blog = ({
   data: {
     allStrapiBlogs: { nodes: blogs },
   },
 }) => {
-  return <h2>blog page</h2>
+  return (
+    // we import out layout component for structure and within that, we give it a section with the blogs component
+    <Layout>
+      <section className="blog-page">
+        <Blogs blogs={blogs} title="blog" />
+      </section>
+    </Layout>
+  )
 }
 
 // now we have data from our allStrapiBlogs
