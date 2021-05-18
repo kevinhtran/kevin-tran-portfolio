@@ -28,7 +28,7 @@ export default ({ data }) => {
       <Projects projects={projects} title="featured projects" showLink />
       {/* now we want to render our blogs component and pass in the props */}
       {/* showLink prop to show or hide the button that allow the user to navigate to a blog page */}
-      <Blogs blogs={blogs} title="blog" showLink />
+      <Blogs blogs={blogs} title="latest articles" showLink />
     </Layout>
   )
 }
