@@ -11,8 +11,10 @@ import Blogs from "../components/Blogs"
 export default ({ data }) => {
   // destructuring
   // looking for allStrapiProjects, it is an object and within the object i'm looking for the nodes and give it an alias of projects.
+  // since we are destructuring, we can also add allStrapiBlogs to equal as our data
   const {
     allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
   } = data
 
   return (
@@ -24,6 +26,9 @@ export default ({ data }) => {
       {/* title - we want our title to show featured projects */}
       {/* showLink - displays the link if it's there */}
       <Projects projects={projects} title="featured projects" showLink />
+      {/* now we want to render our blogs component and pass in the props */}
+      {/* showLink prop to show or hide the button that allow the user to navigate to a blog page */}
+      <Blogs blogs={blogs} title="blog" showLink />
     </Layout>
   )
 }
