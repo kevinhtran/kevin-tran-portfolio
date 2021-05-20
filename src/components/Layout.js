@@ -5,7 +5,6 @@ import Sidebar from "./Sidebar"
 import Footer from "./Footer"
 
 // the layout is the closest parent so we'll do our logic in the layout
-
 const Layout = ({ children }) => {
   // isOpen = state variable, setIsOpen = function, React.useState() = hook, false = default value
   const [isOpen, setIsOpen] = React.useState(false)

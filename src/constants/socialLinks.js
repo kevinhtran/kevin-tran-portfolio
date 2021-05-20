@@ -6,34 +6,35 @@ import {
   FaBehanceSquare,
   FaTwitterSquare,
   FaTheRedYeti,
+  FaGithubSquare,
 } from "react-icons/fa"
 
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    url: "https://www.linkedin.com/in/kevin-tran-a8652586/",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    icon: <FaGithubSquare className="social-icon"></FaGithubSquare>,
+    url: "https://github.com/kevinhtran",
   },
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    url: "https://twitter.com/kev_developer",
   },
+  // {
+  //   id: 4,
+  //   icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
+  //   url: "https://www.twitter.com",
+  // },
+  // {
+  //   id: 5,
+  //   icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
+  //   url: "https://www.twitter.com",
+  // },
 ]
 
 // iterating over the array for each and every item i'm returning the list item with the key

@@ -6,7 +6,7 @@ import SocialLinks from "../constants/socialLinks"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "hero-img.png" }) {
+    file(relativePath: { eq: "coding_guy.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -15,6 +15,7 @@ const query = graphql`
     }
   }
 `
+
 const Hero = () => {
   // useStaticQuery is a react hook to retrieve data (from query) with GraphQL and takes a render prop
   const {
@@ -29,6 +30,7 @@ const Hero = () => {
         {/* the two columns */}
         {/* this site contains the title, subtitle, button */}
         <article className="hero-info">
+          {/* <article> */}
           <div>
             <div className="underline"></div>
             <h1>I'm Kevin</h1>
