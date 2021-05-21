@@ -43,7 +43,7 @@ module.exports = {
         fonts: {
           google: [
             {
-              family: "Roboto",
+              family: "Inter",
               variants: ["400", "700"],
             },
             { family: "Open Sans" },
