@@ -867,10 +867,15 @@ Pages
 .projects-page,
 .blog-page,
 .error-page,
-.about-page,
+/* .about-page, */
 .contact-page {
   background: var(--clr-grey-10);
   min-height: calc(100vh - 5rem - 9rem);
+}
+
+.about-page {
+  background: var(--clr-grey-10);
+  min-height: calc(100vh - 15rem - 27rem);
 }
 .error-page {
   display: grid;

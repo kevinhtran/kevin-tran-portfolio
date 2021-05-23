@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import Jobs from "../components/Jobs"
 import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
@@ -26,6 +27,7 @@ const About = ({
           </article>
         </div>
       </section>
+      <Jobs />
     </Layout>
   )
 }
