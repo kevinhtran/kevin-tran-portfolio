@@ -637,7 +637,8 @@ Projects
 ===============
 */
 .projects {
-  background: var(--clr-grey-10);
+  /* background: var(--clr-grey-10); */
+  background: var(--clr-white);
 }
 .project {
   display: grid;

@@ -21,7 +21,7 @@ export default ({ data }) => {
     <Layout>
       <Hero />
       <Services />
-      <Jobs />
+      {/* <Jobs /> */}
       {/* passing 3 props*/}
       {/* title - we want our title to show featured projects */}
       {/* showLink - displays the link if it's there */}

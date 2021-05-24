@@ -1,11 +1,13 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import { Link } from "gatsby"
+
 const Services = () => {
   return (
     <section className="section bg-grey">
       {/* this is the title prop from title.js that will show as "services" and if there was no title, show as "default title" */}
-      <Title title="services" />
+      <Title title="Skills" />
       {/* we have our list and iterate over our services array with those objects for our service cardsand render them */}
       <div className="section-center services-center">
         {/* we take the imported services constant, map over it */}
@@ -27,6 +29,9 @@ const Services = () => {
           )
         })}
       </div>
+      <Link to="/about" className="btn center-btn">
+        About me
+      </Link>
     </section>
   )
 }
