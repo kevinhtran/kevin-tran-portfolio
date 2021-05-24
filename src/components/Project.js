@@ -29,10 +29,10 @@ const Project = ({ description, title, github, stack, url, image, index }) => {
         </div>
         {/* these are the two href links using react-icons */}
         <div className="project-links">
-          <a href={github}>
+          <a href={github} target="_blank">
             <FaGithubSquare className="project-icon" />
           </a>
-          <a href={url}>
+          <a href={url} target="_blank">
             <FaShareSquare className="project-icon" />
           </a>
         </div>
