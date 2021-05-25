@@ -848,7 +848,7 @@ Footer
   text-transform: uppercase;
 }
 .footer h4 span {
-  color: var(--clr-white);
+  color: var(--clr-primary-6);
 }
 .footer-links {
   margin: 0 auto 1rem auto;
