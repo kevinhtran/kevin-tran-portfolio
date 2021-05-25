@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import logo from "../assets/kevin-tran-header-logo-lowercase.svg"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
@@ -9,8 +10,11 @@ const Navbar = ({ toggleSidebar }) => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <img src={logo} alt="logo" />
+          <Link to="/" styleClass="nav-links">
+            <img src={logo} alt="logo" />
+          </Link>
           {/* this button will have onClick. once you click the button, run the function toggleSidebar */}
+          {/* only shows when the page is scaled down */}
           <button type="button" className="toggle-btn" onClick={toggleSidebar}>
             <FaAlignRight></FaAlignRight>
           </button>
