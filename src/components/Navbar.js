@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import logo from "../assets/kevin-tran-header-logo-lowercase.svg"
+import logo from "../assets/kt_initials_logo.svg"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 
