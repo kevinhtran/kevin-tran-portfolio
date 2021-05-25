@@ -131,7 +131,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -253,6 +253,7 @@ Navbar
 .nav-links {
   display: none;
 }
+
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
@@ -282,12 +283,12 @@ Navbar
     align-items: center;
   }
 }
-
 @media screen and (min-width: 992px) {
   .navbar {
     background: transparent;
   }
 }
+
 /*
 =============== 
 Sidebar
@@ -414,10 +415,10 @@ Hero
 */
 /* underline added to globals */
 .hero {
-  margin-top: -5rem;
-  padding-top: 5rem;
+  margin-top: 0rem;
+  padding-top: 0rem;
   height: 100vh;
-  background: var();
+  background: var(--clr-primary-10);
   position: relative;
 }
 
@@ -432,16 +433,20 @@ Hero
   margin-left: 0;
 }
 .hero-info {
-  background: var(--clr-white);
+  background: var();
 }
 .hero-img {
   display: none;
 }
+.hero-info h1 {
+  color: var(--clr-white);
+}
 .hero-info h4 {
-  color: var(--clr-grey-5);
+  color: var(--clr-white);
 }
 .hero-icons {
   justify-items: flex-start;
+  color: var(--clr-white);
 }
 .hero .btn {
   margin-top: 1.25rem;
@@ -452,7 +457,7 @@ Hero
     content: "";
     position: absolute;
     top: 0;
-    left: 65%;
+    /* left: 65%; */
     right: 0;
     bottom: 0;
     background: var(--clr-white);
@@ -485,6 +490,26 @@ Hero
 
   .hero h4 {
     line-height: 1;
+  }
+}
+.animated-gradient {
+  /* width: 100%;
+  height: 100%; */
+  color: #fff;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 30s ease-in-out infinite;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
   }
 }
 

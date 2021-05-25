@@ -10,7 +10,7 @@ const Navbar = ({ toggleSidebar }) => {
     <nav className="navbar">
       <div className="nav-center">
         <div className="nav-header">
-          <Link to="/" styleClass="nav-links">
+          <Link to="/">
             <img src={logo} alt="logo" />
           </Link>
           {/* this button will have onClick. once you click the button, run the function toggleSidebar */}

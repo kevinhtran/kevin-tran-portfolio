@@ -25,7 +25,7 @@ const Hero = () => {
   } = useStaticQuery(query)
   return (
     // hero will add the color and dimensions of the background
-    <header className="hero">
+    <header className="hero animated-gradient">
       <div className="section-center hero-center">
         {/* the two columns */}
         {/* this site contains the title, subtitle, button */}
