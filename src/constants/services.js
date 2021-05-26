@@ -5,10 +5,10 @@ const frontEndStacks = [
   "html",
   "css",
   "javascript",
-  "reacthjs",
+  "reactjs",
   "gatsbyjs",
   "tailwind css",
-  "materialui",
+  "material ui",
   "bootstrap",
 ]
 const backEndStacks = ["nodejs", "javascript", "graphql", "headless cms"]
