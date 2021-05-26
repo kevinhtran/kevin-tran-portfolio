@@ -13,7 +13,7 @@ const Services = () => {
         {/* we take the imported services constant, map over it */}
         {services.map(service => {
           // destructuring all of the properties out with const which all come from service
-          const { id, icon, title, text } = service
+          const { id, icon, title, text, stack } = service
           return (
             // return an article that has the key prop with id because react requires it
             <article key={id} className="service">
@@ -25,6 +25,8 @@ const Services = () => {
               <div className="underline"></div>
               {/* and then we access our text value */}
               <p>{text}</p>
+              {/* and then we access our stack tags here */}
+              <div className="service-stack">{stack}</div>
             </article>
           )
         })}
