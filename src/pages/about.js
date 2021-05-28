@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import Jobs from "../components/Jobs"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
 
@@ -26,6 +26,9 @@ const About = ({
             </div>
           </article>
         </div>
+        <Link to="/contact" className="center-btn btn">
+          Contact me
+        </Link>
       </section>
       <Jobs />
     </Layout>
