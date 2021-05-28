@@ -103,9 +103,9 @@ const Jobs = () => {
         </article>
       </div>
       {/* this will be a link as a button that redirects us to the about me page */}
-      <Link to="/about" className="btn center-btn">
+      {/* <Link to="/about" className="btn center-btn">
         more info
-      </Link>
+      </Link> */}
     </section>
   )
 }

@@ -11,7 +11,13 @@ const frontEndStacks = [
   "material ui",
   "bootstrap",
 ]
-const backEndStacks = ["nodejs", "javascript", "graphql", "headless cms"]
+const backEndStacks = [
+  "nodejs",
+  "javascript",
+  "graphql",
+  "contentless",
+  "strapi",
+]
 const designStacks = ["prototyping", "wireframing", "figma", "photoshop"]
 
 // this is the array of objects that you will be exporting
